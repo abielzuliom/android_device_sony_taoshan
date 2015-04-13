@@ -6,12 +6,6 @@
     "branch": "cm-12.0"
   },
   {
-    "repository": "SlimRoms/hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm",
-    "remote": "github",
-    "branch": "lp5.0"
-  }
-  {
     "repository": "CyanogenMod/android_kernel_sony_msm8930",
     "target_path": "kernel/sony/msm8930",
     "remote": "github",
@@ -24,9 +18,27 @@
     "branch": "lp5.0"
   },
   {
+    "repository": "SlimRoms/device_sony_qcom-common",
+    "target_path": "device/sony/qcom-common",
+    "remote": "github",
+    "branch": "lp5.0"
+  },
+  {
+    "repository": "SlimRoms/device_qcom_common",
+    "target_path": "device/qcom/common",
+    "remote": "github",
+    "branch": "lp5.0"
+  },
+  {
     "repository": "SlimRoms/device_qcom_sepolicy",
     "target_path": "device/qcom/sepolicy",
     "remote": "github",
     "branch": "lp5.0"
   },
+  {
+    "repository": "SlimRoms/hardware_qcom_fm",
+    "target_path": "hardware/qcom/fm",
+    "remote": "github",
+    "branch": "lp5.0"
+  }
 ]
