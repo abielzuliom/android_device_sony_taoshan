@@ -39,6 +39,24 @@
     "repository": "SlimRoms/hardware_qcom_fm",
     "target_path": "hardware/qcom/fm",
     "remote": "github",
-    "branch": "lp5.0"
-  }
+    "branch": "lp5.0-caf"
+  },
+  {
+      "repository": "SlimRoms/hardware_qcom_display-caf",
+      "target_path": "hardware/qcom/display-caf",
+      "remote": "github",
+      "branch": "lp5.0-caf-8960"
+  },
+  {
+      "repository": "SlimRoms/hardware_qcom_media-caf",
+      "target_path": "hardware/qcom/media-caf",
+      "remote": "github",
+      "branch": "lp5.0-caf-8960"
+  },
+  {
+      "repository": "SlimRoms/hardware_qcom_audio-caf",
+      "target_path": "hardware/qcom/audio-caf",
+      "remote": "github",
+      "branch": "lp5.0-caf-8960"
+   }
 ]
