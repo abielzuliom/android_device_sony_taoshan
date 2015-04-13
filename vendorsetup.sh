@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_taoshan-eng
-add_lunch_combo cm_taoshan-userdebug
+for i in eng userdebug user; do
+    add_lunch_combo full_taoshan-${i}
+    add_lunch_combo slim_taoshan-${i}
+done
