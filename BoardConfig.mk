@@ -21,6 +21,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_ARCH_VARIANT_CPU := cortex-a7
 BOARD_VENDOR_PLATFORM := taoshan
 TARGET_BOOTLOADER_BOARD_NAME := taoshan
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := C2105,C2104,c2105,c2104,taoshan
@@ -32,10 +33,9 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4
 # Kernel
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
-# the androidboot.hardware has impact on loading .rc files
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KERNEL_SOURCE := kernel/sony/msm8930
 TARGET_KERNEL_CONFIG := cyanogenmod_taoshan_defconfig
 
@@ -155,4 +155,4 @@ BOARD_SEPOLICY_UNION += \
     wpa_supplicant.te
 
 # Inherit from fxos device Sony common
--include device/sony/common/BoardConfigCommon.mk
+include device/sony/common/BoardConfigCommon.mk
