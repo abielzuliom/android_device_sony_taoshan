@@ -3,3 +3,6 @@
 #
 
 ro.sf.lcd_density=240
+
+# B2G required configs
+ro.moz.ril.0.network_types=gsm,wcdma,lte
