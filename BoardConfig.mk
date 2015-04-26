@@ -12,20 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Product-specific compile-time definitions.
-
-include vendor/sony/taoshan/BoardConfigVendor.mk
-
-# inherit from Sony common
-include device/sony/common/BoardConfigCommon.mk
-
-# inherit from msm8960-common
-include device/sony/msm8960-common/BoardConfigCommon.mk
-
 USE_CAMERA_STUB := false
 
 TARGET_BOARD_PLATFORM := msm8960
 TARGET_CPU_VARIANT := krait
+TARGET_ARCH_VARIANT_CPU := cortex-a7
 BOARD_VENDOR_PLATFORM := taoshan
 TARGET_BOOTLOADER_BOARD_NAME := qcom
 
@@ -163,3 +154,6 @@ BOARD_SEPOLICY_UNION += \
     system.te \
     ueventd.te \
     wpa_supplicant.te
+
+# inherit from Sony common
+-include device/sony/common/BoardConfigCommon.mk
